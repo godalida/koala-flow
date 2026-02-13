@@ -91,8 +91,8 @@ graph LR
     C --> D[Model Inference]
     D --> E[Sink: dlt]
     
-    style B fill:#f9f,stroke:#333,stroke-width:2px
-    style C fill:#bbf,stroke:#333,stroke-width:2px
+    style B fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    style C fill:#bbf,stroke:#333,stroke-width:2px,color:#000
 ```
 
 1.  **Source:** `dlt` handles the extraction, ensuring state is managed (incremental loading).
