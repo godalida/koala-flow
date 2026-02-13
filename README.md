@@ -40,7 +40,7 @@ Built on the shoulders of giants: **[dlt](https://dlthub.com)** for robust data 
 
 ## 📦 Installation
 
-Python 3.11 or greater is required.
+Python 3.10 or greater is required.
 
 ```bash
 pip install koala-flow
