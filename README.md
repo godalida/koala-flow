@@ -10,10 +10,10 @@
 
 <p align="center">
   <a href="https://pypi.org/project/koala-flow/">
-    <img src="https://img.shields.io/pypi/v/koala-flow?color=green&style=flat-square" alt="PyPI">
+    <img src="https://img.shields.io/pypi/v/koala-flow?color=green" alt="PyPI">
   </a>
   <a href="https://pepy.tech/project/koala-flow">
-    <img src="https://img.shields.io/pepy/dt/koala-flow?style=flat-square&color=blue" alt="Downloads">
+    <img src="https://img.shields.io/pepy/dt/koala-flow?color=blue" alt="Downloads">
   </a>
   <a href="https://github.com/godalida/koala-flow/actions">
     <img src="https://img.shields.io/github/actions/workflow/status/godalida/koala-flow/publish.yml?branch=main&style=flat-square" alt="Tests">
