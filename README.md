@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Koala Flow Logo" width="200">
+  <img src="https://raw.githubusercontent.com/godalida/koala-flow/main/assets/logo.png" alt="Koala Flow Logo" width="200">
 </p>
 
 <h1 align="center">Koala Flow</h1>

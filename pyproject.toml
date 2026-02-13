@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "koala-flow"
-version = "0.1.0"
+version = "0.1.1"
 description = "A lightweight ML orchestration framework for batch inference using dlt and Narwhals."
 readme = "README.md"
 authors = [
