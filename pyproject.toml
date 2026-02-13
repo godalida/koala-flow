@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "koala-flow"
+version = "0.1.0"
+description = "A lightweight ML orchestration framework for batch inference using dlt and Narwhals."
+readme = "README.md"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "dlt>=0.4.0",
+    "narwhals>=1.0.0",
+    "pandas>=2.0.0",  # Default backend, but users can use Polars
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy"
+]
+xgboost = ["xgboost"]
+polars = ["polars"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/koala_flow"]
