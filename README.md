@@ -15,8 +15,8 @@
   <a href="https://pepy.tech/project/koala-flow">
     <img src="https://img.shields.io/pepy/dt/koala-flow?style=flat-square&color=blue" alt="Downloads">
   </a>
-  <a href="https://github.com/koala-flow/koala-flow/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/koala-flow/koala-flow/tests.yml?branch=main&style=flat-square" alt="Tests">
+  <a href="https://github.com/godalida/koala-flow/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/godalida/koala-flow/tests.yml?branch=main&style=flat-square" alt="Tests">
   </a>
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/pypi/l/koala-flow?style=flat-square" alt="License">
@@ -120,4 +120,4 @@ We welcome contributions! Whether it's a new model adapter, a documentation fix,
 
 ## 📄 License
 
-MIT © 2026 KoalaDataLab - [KoalaDataLab](https://koaladatalab.com)
+MIT © 2026 godalida - [KoalaDataLab](https://koaladatalab.com)
