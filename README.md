@@ -19,7 +19,7 @@
     <img src="https://img.shields.io/github/actions/workflow/status/godalida/koala-flow/publish.yml?branch=main&style=flat-square" alt="Tests">
   </a>
   <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/pypi/l/koala-flow?style=flat-square" alt="License">
+    <img src="https://img.shields.io/pypi/l/koala-flow" alt="License">
   </a>
 </p>
 

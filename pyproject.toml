@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "koala-flow"
-version = "0.1.4"
+version = "0.1.5"
 description = "A lightweight ML orchestration framework for batch inference using dlt and Narwhals."
 readme = "README.md"
 authors = [
     { name = "Glenn Dalida", email = "dalidaglenno6452@gmail.com" }
 ]
-license = "MIT"
+license = { text = "MIT" }
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.10",
