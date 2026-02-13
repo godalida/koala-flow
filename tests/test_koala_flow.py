@@ -64,12 +64,13 @@ def test_pipeline_execution_mock(mock_pickle_model, mock_dlt_source):
 
 def test_pytorch_adapter_structure():
     """Test PyTorch adapter structure without needing torch installed (mocking imports)."""
-    with patch.dict(sys.modules, {'torch': MagicMock(), 'numpy': MagicMock()}):
-        # We need to mock torch.load/jit.load
-        mock_torch = sys.modules['torch']
-        mock_torch.load.return_value = MagicMock() # The model
-        mock_torch.from_numpy.return_value = MagicMock()
-        
+    import numpy as np
+    mock_torch = MagicMock()
+    # Mock torch.load/jit.load
+    mock_torch.load.return_value = MagicMock() # The model
+    mock_torch.from_numpy.return_value = MagicMock()
+    
+    with patch.dict(sys.modules, {'torch': mock_torch}):
         # We also need os.path.exists to be True
         with patch("os.path.exists", return_value=True):
              adapter = PyTorchAdapter("fake_model.pt")
@@ -84,18 +85,19 @@ def test_pytorch_adapter_structure():
 
 def test_onnx_adapter_structure():
     """Test ONNX adapter structure without needing onnxruntime."""
-    with patch.dict(sys.modules, {'onnxruntime': MagicMock(), 'numpy': MagicMock()}):
-        mock_ort = sys.modules['onnxruntime']
-        mock_sess = MagicMock()
-        mock_ort.InferenceSession.return_value = mock_sess
-        
-        # Mock input/output metadata for session
-        input_meta = MagicMock(); input_meta.name = "input"
-        output_meta = MagicMock(); output_meta.name = "output"
-        mock_sess.get_inputs.return_value = [input_meta]
-        mock_sess.get_outputs.return_value = [output_meta]
-        mock_sess.run.return_value = [MagicMock()] # returns list of results
-        
+    import numpy as np
+    mock_ort = MagicMock()
+    mock_sess = MagicMock()
+    mock_ort.InferenceSession.return_value = mock_sess
+    
+    # Mock input/output metadata for session
+    input_meta = MagicMock(); input_meta.name = "input"
+    output_meta = MagicMock(); output_meta.name = "output"
+    mock_sess.get_inputs.return_value = [input_meta]
+    mock_sess.get_outputs.return_value = [output_meta]
+    mock_sess.run.return_value = [MagicMock()] # returns list of results
+    
+    with patch.dict(sys.modules, {'onnxruntime': mock_ort}):
         with patch("os.path.exists", return_value=True):
             adapter = ONNXAdapter("fake_model.onnx")
             
