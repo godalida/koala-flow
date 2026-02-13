@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/pepy/dt/koala-flow?style=flat-square&color=blue" alt="Downloads">
   </a>
   <a href="https://github.com/godalida/koala-flow/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/godalida/koala-flow/tests.yml?branch=main&style=flat-square" alt="Tests">
+    <img src="https://img.shields.io/github/actions/workflow/status/godalida/koala-flow/publish.yml?branch=main&style=flat-square" alt="Tests">
   </a>
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/pypi/l/koala-flow?style=flat-square" alt="License">
