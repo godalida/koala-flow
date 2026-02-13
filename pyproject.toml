@@ -19,17 +19,17 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 requires-python = ">=3.10"
+dependencies = [
+    "dlt>=0.4.0",
+    "narwhals>=1.0.0",
+    "pandas>=2.0.0",  # Default backend, but users can use Polars
+]
 
 [project.urls]
 Homepage = "https://github.com/godalida/koala-flow"
 Repository = "https://github.com/godalida/koala-flow"
 Issues = "https://github.com/godalida/koala-flow/issues"
 Documentation = "https://github.com/godalida/koala-flow/blob/main/README.md"
-dependencies = [
-    "dlt>=0.4.0",
-    "narwhals>=1.0.0",
-    "pandas>=2.0.0",  # Default backend, but users can use Polars
-]
 
 [project.optional-dependencies]
 dev = [
