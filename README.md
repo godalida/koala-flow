@@ -86,10 +86,10 @@ Koala Flow enforces a clean separation of concerns for ML in production:
 
 ```mermaid
 graph LR
-    A[Source (dlt)] --> B{Batch Iterator}
-    B --> C[Feature Prep (Narwhals)]
+    A[Source: dlt] --> B{Batch Iterator}
+    B --> C[Feature Prep: Narwhals]
     C --> D[Model Inference]
-    D --> E[Sink (dlt)]
+    D --> E[Sink: dlt]
     
     style B fill:#f9f,stroke:#333,stroke-width:2px
     style C fill:#bbf,stroke:#333,stroke-width:2px
