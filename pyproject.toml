@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "koala-flow"
-version = "0.1.2"
+version = "0.1.3"
 description = "A lightweight ML orchestration framework for batch inference using dlt and Narwhals."
 readme = "README.md"
 authors = [
@@ -19,6 +19,12 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/godalida/koala-flow"
+Repository = "https://github.com/godalida/koala-flow"
+Issues = "https://github.com/godalida/koala-flow/issues"
+Documentation = "https://github.com/godalida/koala-flow/blob/main/README.md"
 dependencies = [
     "dlt>=0.4.0",
     "narwhals>=1.0.0",
